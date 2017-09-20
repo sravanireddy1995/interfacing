@@ -1,0 +1,66 @@
+[2017-08-31 22:32:24] Executing bootstrap tasks
+[2017-08-31 22:32:24] Java(TM) SE Runtime Environment 1.8.0_45-b15
+[2017-08-31 22:32:24] Product org.eclipse.products.epp.package.java.neon
+[2017-08-31 22:32:24] Bundle org.eclipse.oomph.setup 1.6.0.v20161125-0947, build=2790, branch=33010448bcf5775ec23e485876cbb07a0340b9b5
+[2017-08-31 22:32:24] Bundle org.eclipse.oomph.setup.core 1.6.0.v20161128-0928, build=2790, branch=33010448bcf5775ec23e485876cbb07a0340b9b5
+[2017-08-31 22:32:24] Bundle org.eclipse.oomph.setup.p2 1.6.0.v20161019-0656, build=2790, branch=33010448bcf5775ec23e485876cbb07a0340b9b5
+[2017-08-31 22:32:24] Performing P2 Director (Eclipse IDE for Java Developers (Neon))
+[2017-08-31 22:32:24] Offline = false
+[2017-08-31 22:32:24] Mirrors = true
+[2017-08-31 22:32:24] Resolving 23 requirements from 3 repositories to C:\Users\User.FULL347-WIN.000\eclipse\java-neon\eclipse
+[2017-08-31 22:32:24] Requirement epp.package.java [4.6.0,4.7.0)
+[2017-08-31 22:32:24] Requirement org.eclipse.platform.feature.group [4.6.0,4.7.0)
+[2017-08-31 22:32:24] Requirement org.eclipse.rcp.feature.group [4.6.0,4.7.0)
+[2017-08-31 22:32:24] Requirement org.eclipse.buildship.feature.group
+[2017-08-31 22:32:24] Requirement org.eclipse.egit.feature.group
+[2017-08-31 22:32:24] Requirement org.eclipse.egit.mylyn.feature.group
+[2017-08-31 22:32:24] Requirement org.eclipse.jdt.feature.group
+[2017-08-31 22:32:24] Requirement org.eclipse.jgit.feature.group
+[2017-08-31 22:32:24] Requirement org.eclipse.m2e.feature.feature.group
+[2017-08-31 22:32:24] Requirement org.eclipse.m2e.logback.feature.feature.group
+[2017-08-31 22:32:24] Requirement org.eclipse.mylyn.bugzilla_feature.feature.group
+[2017-08-31 22:32:24] Requirement org.eclipse.mylyn.context_feature.feature.group
+[2017-08-31 22:32:24] Requirement org.eclipse.mylyn.git.feature.group
+[2017-08-31 22:32:24] Requirement org.eclipse.mylyn.hudson.feature.group
+[2017-08-31 22:32:24] Requirement org.eclipse.mylyn.ide_feature.feature.group
+[2017-08-31 22:32:24] Requirement org.eclipse.mylyn.java_feature.feature.group
+[2017-08-31 22:32:24] Requirement org.eclipse.mylyn.wikitext_feature.feature.group
+[2017-08-31 22:32:24] Requirement org.eclipse.mylyn_feature.feature.group
+[2017-08-31 22:32:24] Requirement org.eclipse.recommenders.mylyn.rcp.feature.feature.group
+[2017-08-31 22:32:24] Requirement org.eclipse.recommenders.rcp.feature.feature.group
+[2017-08-31 22:32:24] Requirement org.eclipse.recommenders.snipmatch.rcp.feature.feature.group
+[2017-08-31 22:32:24] Requirement org.eclipse.wst.xml_ui.feature.feature.group
+[2017-08-31 22:32:24] Requirement org.eclipse.oomph.setup.feature.group
+[2017-08-31 22:32:24] Repository http://download.eclipse.org/technology/epp/packages/neon
+[2017-08-31 22:32:24] Repository http://download.eclipse.org/releases/neon/201705151400
+[2017-08-31 22:32:24] Repository http://download.eclipse.org/oomph/updates/milestone/latest
+[2017-08-31 22:32:26] ERROR: org.eclipse.equinox.p2.transport.ecf code=1200 Artifact not found: http://download.eclipse.org/releases/neon/201705151400/content.xml.xz.
+java.io.FileNotFoundException: http://download.eclipse.org/releases/neon/201705151400/content.xml.xz
+  at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryStatusHelper.checkFileNotFound(RepositoryStatusHelper.java:297)
+  at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.checkException(FileReader.java:478)
+  at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.sendRetrieveRequest(FileReader.java:435)
+  at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.readInto(FileReader.java:358)
+  at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.download(RepositoryTransport.java:101)
+  at org.eclipse.oomph.p2.internal.core.CachingTransport.download(CachingTransport.java:188)
+  at org.eclipse.oomph.p2.internal.core.CachingTransport.download(CachingTransport.java:251)
+  at org.eclipse.equinox.internal.p2.repository.CacheManager.updateCache(CacheManager.java:402)
+  at org.eclipse.equinox.internal.p2.repository.CacheManager.createCacheFromFile(CacheManager.java:132)
+  at org.eclipse.equinox.internal.p2.metadata.repository.XZedSimpleMetadataRepositoryFactory.getLocalFile(XZedSimpleMetadataRepositoryFactory.java:56)
+  at org.eclipse.equinox.internal.p2.metadata.repository.XZedSimpleMetadataRepositoryFactory.load(XZedSimpleMetadataRepositoryFactory.java:78)
+  at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:57)
+  at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:768)
+  at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+  at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+  at java.lang.reflect.Method.invoke(Unknown Source)
+  at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+  at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:389)
+  at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:196)
+  at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:456)
+  at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+  at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+  at org.eclipse.oomph.p2.internal.core.ProfileTransactionImpl$RepositoryLoader$Worker.perform(ProfileTransactionImpl.java:1613)
+  at org.eclipse.oomph.util.WorkerPool$Worker.run(WorkerPool.java:428)
+  at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+[2017-08-31 22:32:26] 
